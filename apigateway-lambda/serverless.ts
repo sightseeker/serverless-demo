@@ -3,7 +3,7 @@ import type { AWS } from '@serverless/typescript';
 import hello from '@functions/hello';
 
 const serverlessConfiguration: AWS = {
-  service: 'apigateway-lambda',
+  service: 'apigateway-lambda-demo',
   frameworkVersion: '2',
   custom: {
     webpack: {
@@ -11,9 +11,13 @@ const serverlessConfiguration: AWS = {
       includeModules: true,
     },
   },
-  plugins: ['serverless-webpack'],
+  plugins: [
+    'serverless-webpack',
+    'serverless-offline',
+  ],
   provider: {
     name: 'aws',
+    region: 'ap-northeast-1',
     runtime: 'nodejs14.x',
     apiGateway: {
       minimumCompressionSize: 1024,

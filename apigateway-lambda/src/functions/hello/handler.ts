@@ -7,9 +7,11 @@ import { middyfy } from '@libs/lambda';
 import schema from './schema';
 
 const hello: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async (event) => {
+  setTimeout(()=>{
+    console.log("timed out")
+  }, 3000)
   return formatJSONResponse({
-    message: `Hello ${event.body.name}, welcome to the exciting Serverless world!`,
-    event,
+    message: `Hello, welcome to the exciting Serverless world!`
   });
 }
 
