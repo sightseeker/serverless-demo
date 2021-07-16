@@ -28,4 +28,3 @@ const hello = async (event) => {
 }
 
 export const main = middyfy(hello);
-

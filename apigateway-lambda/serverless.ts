@@ -36,7 +36,7 @@ const serverlessConfiguration: AWS = {
     },
     environment: {
       AWS_NODEJS_CONNECTION_REUSE_ENABLED: '1',
-      IS_LOCAL: '${env:IS_LOCAL}'
+      IS_LOCAL: '${env:IS_LOCAL, null}'
     },
     lambdaHashingVersion: '20201221',
   },

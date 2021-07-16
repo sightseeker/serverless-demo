@@ -5,8 +5,9 @@
   "main": "serverless.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sls package --stage dev",
     "start": "sls offline",
-    "deploy": "sls deploy",
+    "deploy": "sls deploy --stage dev",
     "undeploy": "sls remove"
   },
   "engines": {
