@@ -4,6 +4,6 @@ import middyJsonBodyParser from "@middy/http-json-body-parser"
 
 export const middyfy = (handler) => {
   return middy(handler)
-    .use(doNotWaitForEmptyEventLoop())
+    .use(doNotWaitForEmptyEventLoop({runOnError:true}))
     .use(middyJsonBodyParser())
 }

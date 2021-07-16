@@ -1175,6 +1175,21 @@ aws-sdk@^2.834.0, aws-sdk@^2.942.0:
     uuid "3.3.2"
     xml2js "0.4.19"
 
+aws-sdk@^2.947.0:
+  version "2.947.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.947.0.tgz#2cc329654ad09ee7199ef25bc88f2b0e5a2fc155"
+  integrity sha512-m58mW/0Yg2RnRCJSzWZS8JUMhoBQ4trjKf+uJ3bD24jeV+Nf6iIHQ1s4ogP2O2XXUreSRsJNe8l0cOPSOM37Lg==
+  dependencies:
+    buffer "4.9.2"
+    events "1.1.1"
+    ieee754 "1.1.13"
+    jmespath "0.15.0"
+    querystring "0.2.0"
+    sax "1.2.1"
+    url "0.10.3"
+    uuid "3.3.2"
+    xml2js "0.4.19"
+
 aws-sign2@~0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.7.0.tgz#b46e890934a9591f2d2f6f86d7e6a9f1b3fe76a8"
@@ -1809,6 +1824,13 @@ cron-parser@^2.18.0:
     is-nan "^1.3.0"
     moment-timezone "^0.5.31"
 
+cross-env@^7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-7.0.3.tgz#865264b29677dc015ba8418918965dd232fc54cf"
+  integrity sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==
+  dependencies:
+    cross-spawn "^7.0.1"
+
 cross-spawn@^6.0.5:
   version "6.0.5"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-6.0.5.tgz#4a5ec7c64dfae22c3a14124dbacdee846d80cbc4"
@@ -1820,7 +1842,7 @@ cross-spawn@^6.0.5:
     shebang-command "^1.2.0"
     which "^1.2.9"
 
-cross-spawn@^7.0.3:
+cross-spawn@^7.0.1, cross-spawn@^7.0.3:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.3.tgz#f73a85b9d5d41d045551c177e2882d4ac85728a6"
   integrity sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==
@@ -2049,6 +2071,11 @@ dot-qs@0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/dot-qs/-/dot-qs-0.2.0.tgz#d36517fe24b7cda61fce7a5026a0024afaf5a439"
   integrity sha1-02UX/iS3zaYfznpQJqACSvr1pDk=
+
+dotenv-expand@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/dotenv-expand/-/dotenv-expand-5.1.0.tgz#3fbaf020bfd794884072ea26b1e9791d45a629f0"
+  integrity sha512-YXQl1DSa4/PQyRfgrv6aoNjhasp/p4qs9FjJ4q4cQk+8m4r6k4ZSiEyytKG8f8W9gi8WsQtIObNmKd+tMzNTmA==
 
 dotenv@^10.0.0:
   version "10.0.0"
@@ -4739,6 +4766,15 @@ serialize-javascript@^6.0.0:
   integrity sha512-Qr3TosvguFt8ePWqsvRfrKyQXIiW+nGbYpy8XK24NQHE83caxWt+mIymTT19DGFbNWNLfEwsrkSmN64lVWB9ag==
   dependencies:
     randombytes "^2.1.0"
+
+serverless-dotenv-plugin@^3.9.0:
+  version "3.9.0"
+  resolved "https://registry.yarnpkg.com/serverless-dotenv-plugin/-/serverless-dotenv-plugin-3.9.0.tgz#0d82704a3911c1051a1f566a30aaa5f278ad4ae3"
+  integrity sha512-T2fso08DSVfBVMUQX4UxjaCzB32IMD0GOTqncuLUek77YMPrJTmJlKOGr5z64Oe/ySZhR7SJZF9Jn0FJCq7cIg==
+  dependencies:
+    chalk "^4.1.0"
+    dotenv "^8.2.0"
+    dotenv-expand "^5.1.0"
 
 serverless-offline@^7.0.0:
   version "7.0.0"
